@@ -1,0 +1,704 @@
+.wrapper {
+  .firstScreen {
+    position: relative;
+    width: 100vw;
+    height: 47.61rem;
+    background-image: url(../../assets/index_bg.jpg);
+    background-size: 100% 100%;
+    overflow: hidden;
+    .title {
+      font-size: 0.37rem;
+      font-weight: 500;
+      height: 0.88rem;
+      line-height: 0.88rem;
+    }
+    .downloadButton {
+      position: absolute;
+      left: 0.15rem;
+      width: 1.4rem;
+      height: 1.4rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .leftButton {
+      position: absolute;
+      right: 0.3rem;
+      overflow: hidden;
+      .leftItem {
+        display: flex;
+        margin-top: 0.29rem;
+        width: 1.7rem;
+        height: 0.54rem;
+        background: rgba(0, 0, 0, 0.5);
+        border: 2px solid rgba(255, 175, 49, 0.5);
+        border-radius: 0.27rem;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 0.36rem;
+          height: 0.36rem;
+        }
+        span {
+          margin-left: 4px;
+          font-size: 0.24rem;
+          line-height: 0.34rem;
+          color: #ffaf31;
+        }
+      }
+    }
+    .advertisement {
+      width: 5.7rem;
+      height: 2.15rem;
+      margin: 0 auto;
+      margin-top: 5.4rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .activityDate {
+      position: relative;
+      margin: 0 auto;
+      margin-top: 0.24rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 4rem;
+      height: 0.5rem;
+      background: rgba(47, 135, 83, 0.5);
+      border: 1px solid rgba(251, 236, 255, 0.5);
+      border-radius: 0.25rem;
+      span {
+        font-size: 0.3rem;
+        line-height: 0.5rem;
+        font-weight: 400;
+        color: #fff;
+      }
+    }
+    .cardBox {
+      width: 161px;
+      height: 201px;
+      -webkit-perspective: 150rem;
+      perspective: 150rem;
+      -moz-perspective: 150rem;
+      position: relative;
+      margin-top: 0.5rem;
+
+      .card {
+        width: 161px;
+        height: 201px;
+        margin: 0 auto;
+        -webkit-transition: all 0.8s ease;
+        transition: all 0.8s ease;
+        position: absolute;
+        top: 0;
+        left: 2.15rem;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+        img {
+          width: 100%;
+          height: 100;
+        }
+      }
+      .card_back {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+      }
+    }
+    .card_front_active {
+      -webkit-transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
+    }
+
+    .card_back_active {
+      -webkit-transform: rotateY(0);
+      transform: rotateY(0);
+    }
+    .chooseBox {
+      width: 208px;
+      height: 44px;
+      margin: 0 auto;
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(255, 185, 76, 1);
+      box-shadow: 0px 6px 10px 1px rgba(11, 15, 57, 0.35);
+      border-radius: 44rem;
+      .choose {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 40px;
+        border: 1px solid #4e760a;
+        border-radius: 0.4rem;
+        font-size: 18px;
+        font-family: Source Han Sans CN;
+        font-weight: bold;
+        color: #004d27;
+        line-height: 18px;
+      }
+    }
+    .times {
+      width: 150px;
+      height: 15px;
+      margin: 0 auto;
+      margin-top: 10px;
+      font-size: 15px;
+      font-family: Source Han Sans CN;
+      font-weight: 400;
+      color: rgba(0, 78, 39, 1);
+      line-height: 1.5;
+    }
+    .cardInfo {
+      margin-top: 10px;
+      font-size: 12px;
+      font-family: Source Han Sans CN;
+      font-weight: 400;
+      color: rgba(81, 151, 118, 1);
+      line-height: 14px;
+    }
+    .ricePudding {
+      display: flex;
+      margin: 0 auto;
+      width: 312px;
+      margin-top: 36px;
+      .riceItem {
+        position: relative;
+        width: 52px;
+        height: 64px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        .riceNum {
+          position: absolute;
+          right: -8px;
+          top: -8px;
+          width: 16px;
+          height: 16px;
+          background: linear-gradient(0deg, rgba(235, 172, 20, 1) 0%, rgba(255, 210, 126, 1) 100%);
+          border-radius: 50%;
+          font-size: 12px;
+          font-family: DIN;
+          font-weight: bold;
+          color: rgba(10, 118, 64, 1);
+          line-height: 18px;
+        }
+        .riceModal {
+          position: absolute;
+          box-sizing: border-box;
+          left: 0;
+          top: 0;
+          z-index: 9;
+          width: 52px;
+          height: 64px;
+          background: rgba(12, 148, 78, 1);
+          border: 1px solid;
+          border-image: linear-gradient(0deg, rgba(235, 172, 20, 1), rgba(255, 210, 126, 1)) 10 10;
+          opacity: 0.7;
+          .ricePieNum {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            width: 34px;
+            height: 16px;
+            margin: 0 auto;
+            margin-top: 25px;
+            border: 2px solid;
+            border-radius: 8px;
+            font-size: 12px;
+            font-family: DIN;
+            font-weight: bold;
+            color: rgba(255, 177, 55, 1);
+            line-height: 1.5;
+          }
+        }
+      }
+      .riceItem + .riceItem {
+        margin-left: 13px;
+      }
+    }
+  }
+  .changeButton {
+    margin: 0 auto;
+    margin-top: 0.3rem;
+    width: 3.2rem;
+    height: 0.8rem;
+    background: rgba(255, 185, 76, 1);
+    box-shadow: 0px 6px 10px 0px rgba(11, 57, 0, 0.2);
+    border-radius: 0.4rem;
+    font-size: 0.36rem;
+    font-family: Source Han Sans CN;
+    font-weight: bold;
+    color: rgba(1, 79, 40, 1);
+    line-height: 0.8rem;
+  }
+  .myPrize {
+    width: 1.27rem;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+    height: 0.39rem;
+    font-size: 0.3rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(0, 78, 39, 1);
+    line-height: 0.39rem;
+    border-bottom: 1px solid rgba(0, 78, 39, 1);
+  }
+  .introTitle {
+    margin-top: 0.4rem;
+    width: 100%;
+    height: 0.7rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .prizeList {
+    margin: 0 0.88rem;
+    margin-top: 0.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    .prizeItem {
+      width: 2.73rem;
+      height: 3.12rem;
+      margin-top: 0.3rem;
+      background-image: url(../../assets/award_bg.png);
+      background-size: 100% 100%;
+      overflow: hidden;
+      .imgBox {
+        width: 1.2rem;
+        height: 1.5rem;
+        margin: 0 auto;
+        margin-top: 0.32rem;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .bottomBox {
+        .prizeLevel {
+          font-size: 0.3rem;
+          font-family: Source Han Sans CN;
+          font-weight: bold;
+          color: rgba(1, 79, 40, 1);
+          line-height: 0.5rem;
+        }
+        .prizeName {
+          font-size: 0.24rem;
+          font-family: Source Han Sans CN;
+          font-weight: 400;
+          color: rgba(1, 79, 40, 1);
+          line-height: 0.34rem;
+
+          margin: 0 auto;
+        }
+      }
+    }
+    .prizeItem:nth-child(even) {
+      margin-left: 0.2rem;
+    }
+  }
+  @keyframes textScroll {
+    100% {
+      transform: translateY(-18rem);
+    }
+  }
+  .prizeListPersonListBox {
+    position: relative;
+    width: 5rem;
+    height: 1.4rem;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+    overflow: hidden;
+    .prizeListPersonList {
+      animation: textScroll 30s linear infinite;
+      .prizeListPersonItem {
+        font-size: 0.24rem;
+        font-family: Source Han Sans CN;
+        font-weight: 400;
+        color: rgba(0, 78, 39, 1);
+        line-height: 0.36rem;
+      }
+    }
+  }
+  .activityRule {
+    width: 2rem;
+    height: 0.36rem;
+    margin: 0 auto;
+    margin-top: 0.4rem;
+    font-size: 0.35rem;
+    font-family: Source Han Sans CN;
+    font-weight: bold;
+    color: rgba(0, 78, 39, 1);
+    line-height: 0.36rem;
+  }
+  .ruleItem {
+    width: 5.7rem;
+    // height: 3.62rem;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    border: 1px solid rgba(47, 135, 83, 1);
+    border-radius: 0.1rem;
+    .ruleTitle {
+      margin-top: 0.2rem;
+      font-size: 0.3rem;
+      font-family: Source Han Sans CN;
+      font-weight: bold;
+      color: rgba(0, 78, 39, 1);
+      line-height: 0.34rem;
+    }
+    .ruleTime {
+      padding: 0 0.3rem;
+      text-align: left;
+      margin-top: 0.1rem;
+      font-size: 0.24rem;
+      font-family: Source Han Sans CN;
+      font-weight: 400;
+      color: rgba(0, 78, 39, 1);
+      line-height: 0.36rem;
+    }
+    .ruleCon {
+      padding: 0.2rem 0.3rem;
+      font-size: 0.24rem;
+      text-align: justify;
+      word-break: break-all;
+      font-family: Source Han Sans CN;
+      font-weight: 400;
+      color: rgba(0, 78, 39, 1);
+      line-height: 0.36rem;
+    }
+  }
+  .intro {
+    margin-top: 0.3rem;
+    font-size: 0.2rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(0, 78, 39, 1);
+    line-height: 0.36rem;
+  }
+  .codeBox {
+    display: flex;
+    width: 4.4rem;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 0.3rem;
+    .code {
+      width: 1.8rem;
+      .total {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1.46rem;
+        height: 1.46rem;
+        margin: 0 auto;
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 6px 10px 0px rgba(0, 57, 11, 0.35);
+      }
+      img {
+        // position: absolute;
+        // left:0;
+        // top:0;
+        width: 1.32rem;
+        height: 1.32rem;
+        border-radius: 0.08rem;
+      }
+      // .iconBg{
+      //   position: absolute;
+      //   left:-0.07rem;
+      //   top:-0.07rem;
+      //   width:1.46rem;
+      //   height:1.46rem;
+      //   background:rgba(255,255,255,1);
+      //   box-shadow:0rem 0.06rem 0.1rem 0rem rgba(0, 57, 11, 0.35);
+      //   opacity:0.2;
+      //   border-radius:0.22rem;
+      //   z-index: 0;
+      // }
+      // .iconBgQrcode{
+      //   position: absolute;
+      //   left:-0.07rem;
+      //   top:-0.07rem;
+      //   width:1.46rem;
+      //   height:1.46rem;
+      //   background:rgba(255,255,255,1);
+      //   box-shadow:0rem 0.06rem 0.1rem 0rem rgba(0, 57, 11, 0.35);
+      //   opacity:0.2;
+      //   z-index: 0;
+      // }
+      .codeName {
+        font-size: 0.24rem;
+        font-family: Source Han Sans CN;
+        font-weight: bold;
+        color: rgba(1, 79, 40, 1);
+        line-height: 0.37rem;
+        opacity: 0.5;
+      }
+    }
+    .code + .code {
+      margin-left: 1rem;
+    }
+  }
+  .newlywedsModalBox {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    .newlywedsModal {
+      position: fixed;
+      z-index: 99;
+      left: 0.85rem;
+      top: 3rem;
+      width: 5.8rem;
+      height: 8.28rem;
+      background-image: url(../../assets/new_people_bg.png);
+      background-size: 100% 100%;
+      .ricePudding {
+        display: flex;
+        margin: 0 auto;
+        width: 247px;
+        margin-top: 4rem;
+        .riceItem {
+          position: relative;
+          width: 52px;
+          height: 64px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+          .riceNum {
+            position: absolute;
+            right: -8px;
+            top: -8px;
+            width: 16px;
+            height: 16px;
+            background: linear-gradient(
+              0deg,
+              rgba(235, 172, 20, 1) 0%,
+              rgba(255, 210, 126, 1) 100%
+            );
+            border-radius: 50%;
+            font-size: 12px;
+            font-family: DIN;
+            font-weight: bold;
+            color: rgba(10, 118, 64, 1);
+            line-height: 18px;
+          }
+          .riceModal {
+            position: absolute;
+            box-sizing: border-box;
+            left: 0;
+            top: 0;
+            z-index: 9;
+            width: 52px;
+            height: 64px;
+            background: rgba(12, 148, 78, 1);
+            border: 1px solid;
+            border-image: linear-gradient(0deg, rgba(235, 172, 20, 1), rgba(255, 210, 126, 1)) 10 10;
+            opacity: 0.7;
+          }
+        }
+        .riceItem + .riceItem {
+          margin-left: 13px;
+        }
+      }
+      .riceCon {
+        margin-top: 0.5rem;
+        .riceType {
+          font-size: 0.24rem;
+          font-weight: bold;
+          color: #0a7640;
+          line-height: 1.5;
+        }
+        .riceInfo {
+          font-size: 0.24rem;
+          color: #0a7640;
+          line-height: 1.5;
+        }
+      }
+    }
+    .closeButton {
+      margin-top: 12rem;
+      img {
+        width: 0.9rem;
+        height: 0.9rem;
+      }
+    }
+  }
+  .notstartModalBox {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    .notstartModal {
+      width: 6.56rem;
+      height: 4.49rem;
+      margin-left: 0.14rem;
+      margin-top: 4.45rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .closeButton {
+      margin-top: 1rem;
+      img {
+        width: 0.9rem;
+        height: 0.9rem;
+      }
+    }
+  }
+  .finishedModalBox {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    .finishedModal {
+      width: 6.56rem;
+      height: 4.49rem;
+      margin-left: 0.14rem;
+      margin-top: 4.45rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .closeButton {
+      margin-top: 1rem;
+      img {
+        width: 0.9rem;
+        height: 0.9rem;
+      }
+    }
+  }
+  .loginModal {
+    padding: 0 0.57rem;
+    box-sizing: border-box;
+    margin-top: 0.4rem;
+    .loginItme {
+      display: flex;
+      border-bottom: 1px solid #e5e5e5;
+      .loginLabel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 0.54rem;
+        width: 1rem;
+        font-size: 0.28rem;
+        font-family: Source Han Sans CN;
+        font-weight: 400;
+        color: rgba(48, 48, 48, 1);
+        line-height: 0.37rem;
+      }
+      .loginInput {
+        width: 2.3rem;
+        height: 0.54rem;
+        display: flex;
+        margin-left: 0.05rem;
+        input {
+          width: 100%;
+          outline: none;
+          border: none;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+          font-size: 0.28rem;
+          font-family: Source Han Sans CN;
+          font-weight: 400;
+          line-height: 0.37rem;
+        }
+        input[type='text']:focus {
+          outline: none;
+          border: none;
+          font-size: 0.28rem;
+          font-family: Source Han Sans CN;
+          font-weight: 400;
+          color: rgba(48, 48, 48, 1);
+          line-height: 0.37rem;
+        }
+        input[type='text']::-webkit-input-placeholder {
+          /* WebKit browsers */
+          color: #dedede;
+        }
+      }
+      .loginButton {
+        // margin-left: 0.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1.5rem;
+        height: 0.54rem;
+        background: rgba(105, 213, 177, 1);
+        border-radius: 0.27rem;
+        font-size: 0.24rem;
+        font-family: Source Han Sans CN;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+        line-height: 0.37rem;
+      }
+    }
+    .loginItme + .loginItme {
+      margin-top: 0.2rem;
+    }
+    .errorText {
+      margin-top: 0.15rem;
+      text-align: left;
+      font-size: 0.24rem;
+      font-family: Source Han Sans CN;
+      font-weight: 400;
+      color: rgba(216, 91, 47, 1);
+      line-height: 0.37rem;
+    }
+  }
+  .relationModal {
+    padding: 0 1rem;
+    margin-top: 0.3rem;
+    font-size: 0.3rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(48, 48, 48, 1);
+    line-height: 1.5;
+  }
+  .shareButton {
+    position: fixed;
+    bottom: 2rem;
+    right: 0.4rem;
+    z-index: 90;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .changeModal {
+    text-align: left;
+    padding: 0 0.55rem;
+    margin-top: 0.3rem;
+    font-size: 0.3rem;
+    text-align: justify;
+    word-break: break-all;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(48, 48, 48, 1);
+    line-height: 1.5;
+  }
+}
